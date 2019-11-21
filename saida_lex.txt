@@ -1,0 +1,54 @@
+<PROGRAM, program>
+<IDENTIFIER, Sum>
+<SEMI, ;>
+
+
+<IDENTIFIER, Num1>
+<COMMA, ,>
+<IDENTIFIER, Num2>
+<COMMA, ,>
+<IDENTIFIER, Result>
+<COLON, :>
+<INTEGER, integer>
+
+
+<BEGIN, begin>
+
+<WRITE, write>
+<LPAREN, (>
+<CHAR_CONSTANT, 'Input number 1:'>
+<RPAREN, )>
+<SEMI, ;>
+
+<READ, read>
+<LPAREN, (>
+<IDENTIFIER, Num1>
+<RPAREN, )>
+<SEMI, ;>
+
+<WRITE, write>
+<LPAREN, (>
+<CHAR_CONSTANT, 'Input number 2:'>
+<RPAREN, )>
+<SEMI, ;>
+
+<READ, read>
+<LPAREN, (>
+<IDENTIFIER, Num2>
+<RPAREN, )>
+<SEMI, ;>
+
+<IDENTIFIER, Result>
+<ATTRIB, :=>
+<IDENTIFIER, Num1>
+<ADDOP, +>
+<IDENTIFIER, Num2>
+<SEMI, ;>
+
+<WRITE, write>
+<LPAREN, (>
+<IDENTIFIER, Result>
+<RPAREN, )>
+
+<END, end>
+
