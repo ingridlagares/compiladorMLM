@@ -1,0 +1,12 @@
+program Sum;
+
+Num1, Num2, Result : integer
+
+begin
+	write('Input number 1:');
+	read(Num1);
+	write('Input number 2:');
+	read(Num2);
+	Result := Num1 + Num2;
+	write(Result)
+end
