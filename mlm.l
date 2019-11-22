@@ -1,6 +1,19 @@
 %{
+#include <stdio.h>
+#include <string.h>
 #include "y.tab.h"
+#define DEBUG_ECHO(symbol) printf ("<%s, %s>\n", symbol, yytext)
+
 extern YYSTYPE yylval;
+
+char* caps_lock(char *str){
+  uint8_t i;
+  while(str[i]){
+    str[i] -= 32;
+    i++;
+  }
+    return str;
+}
 %}
 
 digit [0-9]

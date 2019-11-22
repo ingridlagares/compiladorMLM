@@ -1,6 +1,13 @@
 %{
 #include <stdio.h>
 #define YYSTYPE char*
+
+int yylex();
+
+void yyerror(char *str){
+  printf("\nERROR: %s\n", str);
+}
+
 %}
 
 %start code
@@ -152,10 +159,6 @@ boolean_constant        : FALSE
 %%
 #include "lex.yy.c"
 
-int main() {
+  int main() {
     return yyparse();
-}
-
-void yyerror(char *s) {
-    fprintf(stderr, "%s\n", s);
-}
+  }
